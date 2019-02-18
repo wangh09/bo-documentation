@@ -38,7 +38,7 @@ GET    http://localhost:8082/ui/info/list?[type={type}&][parent={parent}&][langu
 ```
 [
   {
-    "parent": "about",
+    "parent": "about-us",
     "extension": "",
     "lastModifiedDate": null,
     "lastModifiedBy": "admin",
@@ -100,7 +100,7 @@ GET    http://localhost:8082/ui/info/article/{dictName}/{language}
 }
 ```
 
-异常情况
+* **异常情况：无**
 
 #### 2.按父名称获取文章标题列表（权限开放）
 
