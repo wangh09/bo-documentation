@@ -27,12 +27,11 @@ GET    http://localhost:8082/ui/info/list?[type={type}&][parent={parent}&][langu
 
 | parent | 涵义 |
 | :--- | :--- |
-| about | 关于我们。包括：公司简介\(company-profile\)，团队介绍\(team-intro\)，加入我们\(join-us\) |
-| support | 用户支持。包括：用户协议\(user-agreement\)，法律声明\(legal-notices\)，隐私条款\(privacy-policy\) |
-| follow-us | 关注我们 |
-| friendship | 友情链接 |
-| carousel | 首页轮播图 |
-| website-config | 网站配图。包括：注册、登录、修改密码页面配图 |
+| ex-footer-links | 首页底部链接。包括：关于我们（about-us），用户支持（customer-support）,帮助中心（help-center）,联系我们（contact-us），友情链接（frendship） |
+| about-us | 关于我们。包括：公司简介\(company-profile\)，团队介绍\(team-intro\)，加入我们\(join-us\) |
+| customer-support | 用户支持。包括：用户协议\(user-agreement\)，法律声明\(legal-notices\)，隐私条款\(privacy-policy\) |
+| ex-carousel | 轮播图 |
+| ex-login-modules | 登录模块。包括：注册配图（register），登录配图（login）,忘记密码配图（forgot-pass） |
 
 * **返回结果：**
 
