@@ -88,7 +88,7 @@ B: http://localhost:8080/user/kyc/search?[type={type}][&userId={userId}][&email=
 GET    http://localhost:8080/user/kyc/seclctor/{type}
 ```
 
-* **参数说明：**
+* **参数说明：（userID、mobile、email 三个条件互斥）**
   * String **type:**
     * **certificate 只支持分页，不支持 userId、email、mobile 搜索。排序使用 User 的 created\_date 等类似字段。**
     * **no-certificate 只支持分页，不支持 userId、email、mobile 搜索。排序使用 User 的 create\_date 等类似字段。**
@@ -98,7 +98,7 @@ GET    http://localhost:8080/user/kyc/seclctor/{type}
   * **Long userId ：**支持精确查询
   * **String mobile : **支持模糊搜索
   * **String email ：**支持模糊搜索
-  * **String kycCondition ：**type=statis-level 时必填，其他tape 不支持。kycCondition 可以是 KYC 状态 PENDING、PASSED、REJECETED，也可以是 KYC 级别。
+  * **String kycCondition ：**type=statis-level 时必填，其他tay e 不支持。kycCondition 可以是 KYC 状态 PENDING、PASSED、REJECETED，也可以是 KYC 级别。
   * **Long strat**
   * **Long end**
   * **Pageable**

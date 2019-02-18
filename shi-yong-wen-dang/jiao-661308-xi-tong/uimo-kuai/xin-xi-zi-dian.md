@@ -2,28 +2,30 @@
 
 | Parent | Name | Language | isShow | Url | ImgUrl | Status | OrderBy | Descripiton | Extension |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| root | about | zh-CN | true |  |  |  |  | 关于我们 |  |
-| root | friendship | zh-CN | true |  |  |  |  | 友情链接 |  |
-| root | support | zh-CN | true |  |  |  |  | 用户支持 |  |
-| root | carousel | zh-CN | true |  |  |  |  | 首页轮播图 |  |
-| root | help-center | zh-CN | true |  |  |  |  | 帮助中心 |  |
-| root | follow-us | zh-CN | true |  |  |  |  | 关注我们 |  |
-| root | website-config | zh-CN | true |  |  |  |  | 网站配图 |  |
-| about | company-profile | zh-CN | true |  |  |  |  | 公司简介 |  |
-| about | team-intro | zh-CN | true |  |  |  |  | 团队简介 |  |
-| about | join-us | zh-CN | true |  |  |  |  | 加入我们 |  |
-| support | user-agreement | zh-CN | true |  |  |  |  | 用户协议 |  |
-| support | legal-notices | zh-CN | true |  |  |  |  | 法律声明 |  |
-| support | privacy-policy | zh-CN | true |  |  |  |  | 隐私政策 |  |
-| help-center | create-api | zh-CN | true |  |  |  |  | 创建 API |  |
-| help-center | rate-standard | zh-CN | true |  |  |  |  | 费率标准 |  |
-| help-center | novice-guidance | zh-CN | true |  |  |  |  | 新手指导 |  |
+| root | ex-content | zh-CN | true |  |  |  |  | 内容设置 |  |
+| root | ex-graphics | zh-CN | true |  |  |  |  | 配图设置 |  |
+| root | ex-announcements | zh-CN | true |  |  |  |  | 公告 |  |
+| ex-content | ex-menu-help | zh-CN | true |  |  |  |  | 帮助菜单 |  |
+| ex-content | ex-footer-links | zh-CN | true |  |  |  |  | 首页底部链接 |  |
+| ex-footer-links | about-us | zh-CN | true |  |  |  |  | 关于我们 |  |
+| ex-footer-links | costomer-support | zh-CN | true |  |  |  |  | 用户支持 |  |
+| ex-footer-links | help-center | zh-CN | true |  |  |  |  | 帮助中心 |  |
+| ex-footer-links | contract-us | zh-CN | true |  |  |  |  | 联系我们 |  |
+| ex-footer-links | friendship | zh-CN | true |  |  |  |  | 友情链接 |  |
+| ex-graphics | ex-carousel | zh-CN | true |  |  |  |  | 用户协议 |  |
+| ex-graphics | ex-login-modules | zh-CN | true |  |  |  |  | 法律声明 |  |
+| ex-login-modules | login | zh-CN | true |  |  |  |  | 登录配图 |  |
+| ex-login-modules | register | zh-CN | true |  |  |  |  | 注册配图 |  |
+| ex-login-modules | forgot-pass | zh-CN | true |  |  |  |  | 忘记密码配图 |  |
+| about-us | company-profile | zh-CN | true |  |  |  |  | 公司简介 |  |
+| about-us | team-intro | zh-CN | true |  |  |  |  | 团队简介 |  |
+| about-us | join-us | zh-CN | true |  |  |  |  | 加入我们 |  |
+| customer-support | user-agreement | zh-CN | true |  |  |  |  | 用户协议 |  |
+| customer-support | legal-notices | zh-CN | true |  |  |  |  | 法律声明 |  |
+| customer-support | privacy-policy | zh-CN | true |  |  |  |  | 隐私政策 |  |
 | help-center | FAQ | zh-CN | true |  |  |  |  | 常见问题 |  |
-| help-center | business-cooperation | zh-CN | true |  |  |  |  | 商务合作 |  |
-| follow-us | Facebook | zh-CN | true |  |  |  |  | 脸书 |  |
-| follow-us | Twitter | zh-CN | true |  |  |  |  | 推特 |  |
-| follow-us | WeChat | zh-CN | true |  |  |  |  | 微信 |  |
-| follow-us | Weibo | zh-CN | true |  |  |  |  | 微博 |  |
+| help-center | novice-guidance | zh-CN | true |  |  |  |  | 新手指导 |  |
+| help-center | rate-standard | zh-CN | true |  |  |  |  | 费率标准 |  |
 
 ## 字段说明
 
