@@ -316,10 +316,12 @@ GET    http://localhost:8082/security/captcha/display
 ```
 
 * **返回结果：**
+* \(图形验证码返回结果\)
 
 ![](/assets/1529505540078.jpg)
 
-* **参数说明：**“success" 值为1，证明极验初始化成功。
+* \(极验验证返回结果\)
+  * **参数说明：**“success" 值为1，证明极验初始化成功。
 
 ```
 {"success":1,"challenge":"f536103d721b8105bf758b65940dbf37","gt":"44d6e413fd041e7a8e61bd6d72d54b1d"}
