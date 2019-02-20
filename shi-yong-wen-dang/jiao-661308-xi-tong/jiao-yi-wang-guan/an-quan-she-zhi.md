@@ -197,7 +197,7 @@ GET    http://localhost:8082/security/email/send/{email}/{type}/{language}
 
 * **接口说明：由于邮件异步发送，且没有返回值，所以默认发送成功，邮件服务商造成的退信等情况并不会返回到发送结果。**
 
-* **参数1：**String **email 支持 a\_b-.@x-y.com 类似格式**
+* **参数1：**String **email 支持 **a-b\_.+@x-\_x.com-\_** 类似格式**
 
 * **参数2：**String **type**
 
