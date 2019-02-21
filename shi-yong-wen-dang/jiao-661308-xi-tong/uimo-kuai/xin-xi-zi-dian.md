@@ -8,7 +8,7 @@
 | ex-content | ex-menu-help | zh-CN | true |  |  |  |  | 帮助菜单 |  |
 | ex-content | ex-footer-links | zh-CN | true |  |  |  |  | 首页底部链接 |  |
 | ex-footer-links | about-us | zh-CN | true |  |  |  |  | 关于我们 |  |
-| ex-footer-links | costomer-support | zh-CN | true |  |  |  |  | 用户支持 |  |
+| ex-footer-links | customer-support | zh-CN | true |  |  |  |  | 用户支持 |  |
 | ex-footer-links | help-center | zh-CN | true |  |  |  |  | 帮助中心 |  |
 | ex-footer-links | contract-us | zh-CN | true |  |  |  |  | 联系我们 |  |
 | ex-footer-links | friendship | zh-CN | true |  |  |  |  | 友情链接 |  |
