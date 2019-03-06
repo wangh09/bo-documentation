@@ -262,7 +262,7 @@ GET    http://localhost:8082/security/email/send/{email}/{type}/{language}
 
     * String **emailDayLimit  天级别限制**
 
-  * Long** expire 当 emailResult 以 Limiit 结尾，该字段存在，有值且单位为秒**
+  * Long** expire 仅当 emailResult 的值以 Limiit 结尾时，该字段存在，有值且单位为秒**
 
 #### 3. 验证邮箱注册码（权限开放）
 
