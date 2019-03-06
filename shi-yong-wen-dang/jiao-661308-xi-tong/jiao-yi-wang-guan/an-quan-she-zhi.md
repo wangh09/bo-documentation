@@ -221,10 +221,6 @@ GET    http://localhost:8082/security/email/send/{email}/{type}/{language}
 
   * **resetCurrencyPassEmail  用户重置资金验证码邮件**
 
-  * **withdrawEmail  用户提现验证码邮件**
-
-  * **createApiEmail  用户创建 API 验证码邮件**
-
   * **bindGAEmail 用户绑定 GA 验证码邮件**
 
   * **resetGAEmail 用户重置 GA 验证码邮件**
@@ -266,7 +262,7 @@ GET    http://localhost:8082/security/email/send/{email}/{type}/{language}
 
     * String **emailDayLimit  天级别限制**
 
-  * Long** expire 返回结果有 Limiit 结尾字段有该字段，有值且单位为秒**
+  * Long** expire 当 emailResult 以 Limiit 结尾，该字段存在，有值且单位为秒**
 
 #### 3. 验证邮箱注册码（权限开放）
 
@@ -275,7 +271,7 @@ GET    http://localhost:8082/security/email/verify/{type}/{email}/{key}
 ```
 
 * **参数1：**String **type  邮件模板**
-* **参数2：**String** email  支持 a\_b-.@x-y.com 类似格式**
+* **参数2：**String** email  支持格式参考相关逻辑**
 * **参数3：**String **code  验证码**
 
 * **返回结果：**
