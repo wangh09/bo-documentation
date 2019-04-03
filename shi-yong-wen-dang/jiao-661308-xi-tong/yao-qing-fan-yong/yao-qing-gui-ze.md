@@ -140,7 +140,7 @@ GET    http://localhost:8080/invitaion/level/rule?page={page}&size={size}&sort={
 }
 ```
 
-#### 3.获取用户邀请详情
+#### 3.获取用户邀请基本信息
 
 ```
 GET    http://localhost:8080/invitation/basic/{userId}
@@ -209,6 +209,52 @@ GET    http://localhost:8080/invitation/basic/{userId}
     "3": 2
   },
   "referralRewardMap": null
+}
+```
+
+#### 4.调整用户返佣规则
+
+```
+PUT    http://localhost:8082/auth/user/invitation/user/setting
+```
+
+* **接口使用说明：**
+  * 根据用户邀请的基本信息（接口3）获取用户所有规则的返佣截止日期，未过期，调用该接口。已过期，不允许调用。
+* **参数说明：**
+  * Long **userId：用户 id**
+  * String **medalType： **
+    * **ADJUSTMENT 调级**
+    * **CLEAR 清退（用户返佣状态关闭，底层不再返佣）**
+    * **RESTORE 恢复（用户返佣状态开启，底层开始返佣）**
+  * Long** levelId：调级时，使用 levelId（根据接口分页获取 level 的 id）。**
+  * String **lastModifiedBy：操作人员**
+
+```
+{
+  "userId": 11198,
+  ["levelId": 1,]
+  "medalType": "CLEAR",
+  "lastModifiedBy": "bonismo",
+}
+```
+
+* **返回结果：**
+
+```
+{
+  "id": 10,
+  "userId": 11198,
+  "levelId": 1,
+  "invitationCode": "P5Xa56",
+  "invitationType": "REFERRAL_REWARD",
+  "usedCount": -1,
+  "basicUserId": 11198,
+  "extension": "{\"id\":1,\"nameCN\":\"铜牌\",\"nameEN\":\"Bronze Medal\",\"nameJP\":\"銅メダル\",\"nameKR\":\"동메달\",\"ruleMap\":{1:{\"expire\":90,\"expiredDate\":\"2019-07-02T07:33:37Z\",\"level\":1,\"referralRewardRate\":0.1,\"status\":\"DOWN\"},2:{\"expire\":120,\"expiredDate\":\"2019-08-01T07:33:37Z\",\"level\":2,\"referralRewardRate\":0.2,\"status\":\"DOWN\"},3:{\"expire\":180,\"expiredDate\":\"2019-09-30T07:33:37Z\",\"level\":3,\"referralRewardRate\":0.4,\"status\":\"DOWN\"}}}",
+  "description": null,
+  "createdBy": "system",
+  "createdDate": "2019-04-03T07:33:38Z",
+  "lastModifiedBy": "bonismo",
+  "lastModifiedDate": "2019-04-03T09:34:43Z"
 }
 ```
 
