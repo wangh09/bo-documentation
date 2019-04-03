@@ -17,7 +17,7 @@ GET    http://localhost:8082/auth/invitation/code/check/{invitationCode}
 ```
 SUCCESS    // 验证成功
 NO_EXISTS  // 验证码不存在
-NONE       // 验证码次数用完 
+NONE       // 验证码次数用完
 ```
 
 * **异常情况：无**
@@ -42,6 +42,10 @@ GET    http://localhost:8082/auth/invitation/code
 GET    http://localhost:8082/auth/invitation/level/description
 ```
 
+* **接口使用说明：**
+  * ruleMap：
+    * 只显示生效的返佣规则。
+    * 如果后台清退用户返佣，数据可能为空。
 * **返回结果：**
 
 ```

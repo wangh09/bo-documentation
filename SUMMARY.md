@@ -43,5 +43,7 @@
     * [挂单管理](shi-yong-wen-dang/jiao-661308-xi-tong/ding-dan-guan-li/gua-dan-guan-li.md)
     * [盘口查询](shi-yong-wen-dang/jiao-661308-xi-tong/ding-dan-guan-li/pan-kou-cha-xun.md)
     * [订单插件](shi-yong-wen-dang/jiao-661308-xi-tong/ding-dan-guan-li/ding-dan-cha-jian.md)
+  * [邀请返佣](shi-yong-wen-dang/jiao-661308-xi-tong/yao-qing-fan-yong.md)
+    * [邀请规则](shi-yong-wen-dang/jiao-661308-xi-tong/yao-qing-fan-yong/yao-qing-gui-ze.md)
 * [相关逻辑](shi-yong-wen-dang/jiao-661308-xi-tong/xiang-guan-luo-ji.md)
 
