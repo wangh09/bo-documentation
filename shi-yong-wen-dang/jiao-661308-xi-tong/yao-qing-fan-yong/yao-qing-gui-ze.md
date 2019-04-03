@@ -258,5 +258,108 @@ PUT    http://localhost:8082/auth/user/invitation/user/setting
 }
 ```
 
+#### 5.相关邀请信息综合查询
+
+```
+GET    http://localhost:8082/invitaiton/selector/{type}
+```
+
+* **接口使用说明：**
+  * 查询所有用户邀请相关信息
+  * 查询指定用户的下级相关信息
+* **参数说明：**
+  * String **type：**
+    * **all 查询所有用户**
+    * **single 查询指定用户**
+  * Long **userId：用户 id**
+  * String **email：邮箱**
+    * **可支持模糊查询，通过开关开启**
+    * **type = all 时，根据 email 查找相关用户**
+    * **type = single 时，根据当前 userId 查询符合 email 相关用户**
+  * Long **lowerUserId：**
+    * **下级用户 id \(仅 type = single 时使用，根据当前 userId 查询 lowerUserId 信息\)**
+  * Long **startDate：仅支持 type = single**
+  * Long **endDate：仅支持 type = single**
+  * **分页数据（支持 type = all、type = single）**
+    * int page
+    * int size
+    * String sort
+* **返回结果：**
+
+```
+{
+  "content": [
+    {
+      "userId": 11214,
+      "email": "napoleon@qq.com",
+      "invitationCode": "P5TaV8",
+      "relation": 1,
+      "ruleVM": {
+        "id": 1,
+        "nameCN": "铜牌",
+        "nameEN": "Bronze Medal",
+        "nameJP": "銅メダル",
+        "nameKR": "동메달",
+        "ruleMap": {
+          "1": {
+            "level": 1,
+            "expire": 90,
+            "referralRewardRate": 0.1,
+            "expiredDate": "2019-07-02T11:27:31.990Z",
+            "status": "ON"
+          },
+          "2": {
+            "level": 2,
+            "expire": 120,
+            "referralRewardRate": 0.2,
+            "expiredDate": "2019-08-01T11:27:31.990Z",
+            "status": "ON"
+          },
+          "3": {
+            "level": 3,
+            "expire": 180,
+            "referralRewardRate": 0.4,
+            "expiredDate": "2019-09-30T11:27:31.990Z",
+            "status": "ON"
+          }
+        }
+      },
+      "upperUserId": 11213,
+      "lowerLevel": null,
+      "levelCountMap": {
+        "1": 0,
+        "2": 0,
+        "3": 0
+      },
+      "totalReferralReward": null,
+      "createdDate": "2019-04-03T11:27:32Z"
+    },
+    ...... [other data]
+],
+  "number": 0,
+  "size": 10,
+  "totalElements": 10,
+  "pageable": {
+    "sort": {
+      "sorted": false,
+      "unsorted": true
+    },
+    "pageSize": 10,
+    "pageNumber": 0,
+    "offset": 0,
+    "paged": true,
+    "unpaged": false
+  },
+  "last": true,
+  "totalPages": 1,
+  "sort": {
+    "sorted": false,
+    "unsorted": true
+  },
+  "first": true,
+  "numberOfElements": 10
+}    
+```
+
 
 
