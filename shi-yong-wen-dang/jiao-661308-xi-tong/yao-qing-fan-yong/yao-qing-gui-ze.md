@@ -140,6 +140,8 @@ GET    http://localhost:8080/invitaion/level/rule?page={page}&size={size}&sort={
 }
 ```
 
+* **异常情况：无**
+
 #### 3.获取用户邀请基本信息
 
 ```
@@ -212,6 +214,8 @@ GET    http://localhost:8080/invitation/basic/{userId}
 }
 ```
 
+* **异常情况：无**
+
 #### 4.调整用户返佣规则
 
 ```
@@ -258,6 +262,8 @@ PUT    http://localhost:8082/auth/user/invitation/user/setting
 }
 ```
 
+* **异常情况：无**
+
 #### 5.相关邀请信息综合查询
 
 ```
@@ -284,6 +290,7 @@ GET    http://localhost:8082/invitaiton/selector/{type}
     * int page
     * int size
     * String sort
+* **返回参数说明：返回结果已注释**
 * **返回结果：**
 
 ```
@@ -293,7 +300,7 @@ GET    http://localhost:8082/invitaiton/selector/{type}
       "userId": 11214,
       "email": "napoleon@qq.com",
       "invitationCode": "P5TaV8",
-      "relation": 1,
+      "relation": 1,                                  // 根节点距离
       "ruleVM": {
         "id": 1,
         "nameCN": "铜牌",
@@ -302,11 +309,11 @@ GET    http://localhost:8082/invitaiton/selector/{type}
         "nameKR": "동메달",
         "ruleMap": {
           "1": {
-            "level": 1,
-            "expire": 90,
-            "referralRewardRate": 0.1,
-            "expiredDate": "2019-07-02T11:27:31.990Z",
-            "status": "ON"
+            "level": 1,                                 // 返佣规则等级
+            "expire": 90,                               // 返佣有效天数
+            "referralRewardRate": 0.1,                  // 返佣比例
+            "expiredDate": "2019-07-02T11:27:31.990Z",  // 返佣截止时间
+            "status": "ON"                              // 返佣开启状态 ON / DOWN
           },
           "2": {
             "level": 2,
@@ -324,15 +331,15 @@ GET    http://localhost:8082/invitaiton/selector/{type}
           }
         }
       },
-      "upperUserId": 11213,
-      "lowerLevel": null,
-      "levelCountMap": {
+      "upperUserId": 11213,  // 上级 userId
+      "lowerLevel": null,    // 该字段可以根据上次请求用户的 relation 返回 lowerLevel 显示该用户与上次用户的级别关系，暂不适用
+      "levelCountMap": {     // 每级邀请的用户数量（根据该用户开启的返佣规则确定）
         "1": 0,
         "2": 0,
         "3": 0
       },
-      "totalReferralReward": null,
-      "createdDate": "2019-04-03T11:27:32Z"
+      "totalReferralReward": null,  // 返佣总额，该数据为 null，统一请求资金接口回去
+      "createdDate": "2019-04-03T11:27:32Z" // 用户注册时间
     },
     ...... [other data]
 ],
@@ -358,8 +365,10 @@ GET    http://localhost:8082/invitaiton/selector/{type}
   },
   "first": true,
   "numberOfElements": 10
-}    
+}
 ```
+
+* **异常情况：无**
 
 
 
