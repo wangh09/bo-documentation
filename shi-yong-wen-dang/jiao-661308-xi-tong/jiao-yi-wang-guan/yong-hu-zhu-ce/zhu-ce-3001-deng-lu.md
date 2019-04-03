@@ -83,7 +83,7 @@ application:
   * String **email : 格式参考相关逻辑**
   * String **password : 长度可配置**
   * Boolean **actived : 该字段根据 activationType 值决定是否传入， true \[ 用户邮箱已验证 \]  （如果为 false ，用户未激活，3天后自动删除账号）**
-  * String **invitationCode：邀请码，暂时可以不传值（等下一版需求）。**
+  * String **invitationCode：邀请码，可选参数。**
   * String **password : 密码必须使用 **_**sun.misc.BASE64Encoder**_** 的 base64 进行编码 **
 
 ```

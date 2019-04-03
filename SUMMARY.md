@@ -19,6 +19,7 @@
     * [绑定 GA](shi-yong-wen-dang/jiao-661308-xi-tong/jiao-yi-wang-guan/yong-hu-an-quan-bang-ding/bangding-ga.md)
     * [绑定资金密码](shi-yong-wen-dang/jiao-661308-xi-tong/jiao-yi-wang-guan/yong-hu-an-quan-bang-ding/bang-ding-zi-jin-mi-ma.md)
   * [公共信息校验](shi-yong-wen-dang/jiao-661308-xi-tong/jiao-yi-wang-guan/an-quan-she-zhi.md)
+  * [邀请码](shi-yong-wen-dang/jiao-661308-xi-tong/jiao-yi-wang-guan/yao-qing-ma.md)
 * [模块-后台管理](shi-yong-wen-dang/jiao-661308-xi-tong/mo-5757-hou-tai-guan-li.md)
   * [前台用户管理](shi-yong-wen-dang/jiao-661308-xi-tong/yong-hu-guan-li.md)
     * [KYC 基本信息展示](shi-yong-wen-dang/jiao-661308-xi-tong/yong-hu-guan-li/kyc-ren-zheng.md)
