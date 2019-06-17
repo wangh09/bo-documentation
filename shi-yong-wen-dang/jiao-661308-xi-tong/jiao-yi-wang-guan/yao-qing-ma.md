@@ -16,7 +16,7 @@ GET    http://localhost:8082/auth/invitation/code/check/{invitationCode}
 
 ```
 SUCCESS    // 验证成功
-NO_EXISTS  // 验证码不存在
+NOT_EXISTS  // 验证码不存在
 NONE       // 验证码次数用完
 ```
 
